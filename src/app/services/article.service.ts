@@ -25,6 +25,7 @@ export class ArticleService {
       title: articles.title,
       description: articles.description,
       price: articles.price,
+      zona:articles.zona,
       imageUrl: articles.imageUrl
     }
     )

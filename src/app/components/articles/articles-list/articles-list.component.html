@@ -1,1 +1,44 @@
-<p>articles-list works!</p>
+
+<div class="container mt-5" style="text-align: center;">
+    <div class="row">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Zona</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let article of articleList">
+
+                    <th scope="row">
+
+                    </th>
+                    <td>{{article.title}}</td>
+                    <td>{{article.description}}</td>
+                    <td>{{article.price}}</td>
+                    <td>{{article.zona}}</td>
+                    <td>{{article.telefono}}</td>
+
+                    <td>
+                        <a class="btn btn-secondary text-white" (click)="onEdit(article)">
+                            <i class="far fa-edit"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a class="btn btn-danger text-white" (click)="onDelete(article.$key)">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<app-article></app-article>
