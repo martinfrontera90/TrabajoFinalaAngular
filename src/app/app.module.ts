@@ -23,6 +23,7 @@ import { ArticleComponent } from './components/articles/article/article.componen
 import {ArticleService} from './services/article.service';
 import { CardsComponent } from './components/cards/cards.component';
 import { ModalComponent } from './components/cards/modal/modal.component';
+import { ArticleListComponent } from './components/article-list/article-list.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ModalComponent } from './components/cards/modal/modal.component';
     ArticleComponent,
     CardsComponent,
     ModalComponent,
+    ArticleListComponent,
   ],
   imports: [
     NgbModule,
